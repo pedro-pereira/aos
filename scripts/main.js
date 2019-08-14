@@ -18,6 +18,7 @@ var telaAos, tituloAos, tituloSintomas, tituloConsequencia, textoAos, textoConse
 var telaTratamentos, tituloDiagnostico, textoDiagnostico, tituloTratamento;
 var iconeHigiene, iconeRemedio, iconeFono, iconeCirugia, iconeIntraoral, iconeCpap;
 var textoHigiene, textoRemedio, textoFono, textoCirugia, textoIntraoral, textoCpapTrat;
+var linkPolissonografia;
 var primeiroCliqueTratamentos;
 var transicao = false;
 var fimPrimeiroClique = false;
@@ -109,6 +110,7 @@ function preload (){
 	game.load.image('tituloDiagnostico'                  , 'imagens/tela-2-titulo-diagnostico.png');
 	game.load.image('tituloTratamentos'                  , 'imagens/tela-2-titulo-tratamentos.png');
 	game.load.image('textoDiagnostico'                   , 'imagens/tela-2-texto-diagnostico.png');
+	game.load.image('linkPolissonografia'                , 'imagens/tela-2-link-polissonografia.png');
 
 	game.load.image('iconeHigiene'                       , 'imagens/tela-2-icone-exercicios.png');
 	game.load.image('iconeRemedio'                       , 'imagens/tela-2-icone-remedio.png');
@@ -714,6 +716,10 @@ function createModals() {
 						hideModalTratamentos();
 				 	}
 				}
+			},
+			{
+				type: "image",
+				content: "linkPolissonografia"
 			}
 		]
 	});
@@ -1220,6 +1226,11 @@ function showModalTratamentos(){
 	textoCpapTrat.x = 510;
 	textoCpapTrat.y = 365;
 	textoCpapTrat.alpha = 0;
+	
+	linkPolissonografia = reg.modal.getModalItem("modalTratamentos", 21);
+	linkPolissonografia.x = 500;
+	linkPolissonografia.y = 150;
+	linkPolissonografia.alpha = 0;
 
 	reg.modal.showModal("modalTratamentos");
 }
