@@ -770,7 +770,8 @@ function createModals() {
 				offsetY: 150,
 				offsetX: 290,
 				callback : function(){
-					window.open("https://www.youtube.com/embed/b61ZX2IgOww");
+					alert("Em breve um vídeo novo. Aguarde.");
+					// window.open("https://www.youtube.com/embed/b61ZX2IgOww");
 					// abreJanelaDeVideo();
 				}
 			},
