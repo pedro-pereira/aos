@@ -1132,17 +1132,17 @@ function showModalApresentacao(){
 
 	legendaRespiracaoApneia   = reg.modal.getModalItem("modalApresentacao", 10);
 	legendaRespiracaoApneia.x = 120;
-	legendaRespiracaoApneia.y = 260;
+	legendaRespiracaoApneia.y = 280;
 
 	respiracaoApneia.x = 120;
-	respiracaoApneia.y = 266;
+	respiracaoApneia.y = 284;
 
 	legendaRespiracaoCorreta   = reg.modal.getModalItem("modalApresentacao", 11);
 	legendaRespiracaoCorreta.x = 120;
-	legendaRespiracaoCorreta.y = 400;
+	legendaRespiracaoCorreta.y = 410;
 
 	respiracaoCorreta.x = 115;
-	respiracaoCorreta.y = 400;
+	respiracaoCorreta.y = 410;
 
 	engasgo.x = 385 + engasgo.width/2;
 	engasgo.y = 150 + engasgo.height/2;
@@ -1617,17 +1617,17 @@ function showModalPerguntas(){
 
 	pergunta3Balao1 = reg.modal.getModalItem("modalPerguntas", 20);
 	pergunta3Balao1.x = 505;
-	pergunta3Balao1.y = 205;
+	pergunta3Balao1.y = 195;
 	pergunta3Balao1.alpha = 0;
 
 	pergunta3Balao2 = reg.modal.getModalItem("modalPerguntas", 21);
 	pergunta3Balao2.x = 470;
-	pergunta3Balao2.y = 270;
+	pergunta3Balao2.y = 260;
 	pergunta3Balao2.alpha = 0;
 
 	pergunta3Balao3 = reg.modal.getModalItem("modalPerguntas", 22);
 	pergunta3Balao3.x = 470;
-	pergunta3Balao3.y = 405;
+	pergunta3Balao3.y = 395;
 	pergunta3Balao3.alpha = 0;
 
 	pergunta4 = reg.modal.getModalItem("modalPerguntas", 23);
