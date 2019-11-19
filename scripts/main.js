@@ -26,7 +26,7 @@ var fimPrimeiroClique = false;
 // Tela Cpap
 var telaCpap, tituloCpap, tituloBeneficios, tituloExperimente;
 var textoCpap, textoBeneficios, textoInformacoes;
-var aparelhoCpap, botaoPlay, textoArrasteCpap;
+var aparelhoCpap, botaoPlay, botaoAjusteMascara, textoArrasteCpap;
 var mascaraAcoplada = false;
 var personagemErradoCpap, personagemCertoCpap;
 
