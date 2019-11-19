@@ -130,6 +130,7 @@ function preload (){
 	game.load.image('botaoFecharCpap'                    , 'imagens/botaoFechar.png');
 	game.load.image('aparelhoCpap'                       , 'imagens/aparelhoCpap.png');
 	game.load.image('botaoPlay'                          , 'imagens/tela-3-botao-play.png');
+	game.load.image('botaoAjusteMascara'                 , 'imagens/tela-3-botao-play.png');
 	game.load.image('textoArrasteCpap'                   , 'imagens/tela-3-texto-arraste.png');
 	game.load.atlasJSONHash('personagemErradoCpap'       , 'imagens/tela-3-personagem-respirando-errado.png'
                                                          , 'imagens/tela-3-personagem-respirando-errado.json');
@@ -321,8 +322,13 @@ function create (){
 
 	botaoPlay = reg.modal.getModalItem("modalCpap", 5);
 	botaoPlay.inputEnabled = true;
-	botaoPlay.x = 800;
-	botaoPlay.y = 480;
+	botaoPlay.x = 880;
+	botaoPlay.y = 450;
+	
+	botaoAjusteMascara = reg.modal.getModalItem("modalCpap", 17);
+	botaoAjusteMascara.inputEnabled = true;
+	botaoAjusteMascara.x = 880;
+	botaoAjusteMascara.y = 490;
 
 	textoArrasteCpap = reg.modal.getModalItem("modalCpap", 6);
 	textoArrasteCpap.alpha = 0;
@@ -421,6 +427,7 @@ function update () {
 	alteraEscalaImagem(grupoPerguntas, 1.3);
 
 	alteraEscalaImagem(botaoPlay, 1.2);
+	alteraEscalaImagem(botaoAjusteMascara, 1.2);
 
 	// Limitadores da tela para a máscara no Pop-Up
 	if(aparelhoCpap.x < 91 ) aparelhoCpap.x = 91;
@@ -721,8 +728,7 @@ function createModals() {
 				type: "image",
 				content: "linkPolissonografia",
 				callback : function(){
-					alert("Em breve um vídeo novo. Aguarde.");
-					//window.open("https://www.youtube.com/embed/b61ZX2IgOww");
+					window.open("https://www.youtube.com/embed/D3YzBUsmBWE");
 				}
 			}
 		]
@@ -770,9 +776,7 @@ function createModals() {
 				offsetY: 150,
 				offsetX: 290,
 				callback : function(){
-					alert("Em breve um vídeo novo. Aguarde.");
-					// window.open("https://www.youtube.com/embed/b61ZX2IgOww");
-					// abreJanelaDeVideo();
+					window.open("https://www.youtube.com/embed/bIiUqhnOkrU");
 				}
 			},
 			{
@@ -832,6 +836,15 @@ function createModals() {
 			{
 				type : "image",
 				content: "textoInformacoes"
+			},
+			{
+				type : "image",
+				content: "botaoAjusteMascara",
+				offsetY: 150,
+				offsetX: 290,
+				callback : function(){
+					window.open("https://www.youtube.com/embed/sjykuIACqe0");
+				}
 			}
 		]
 	});
@@ -1009,7 +1022,7 @@ function createModals() {
 				content: "pergunta6Balao2",
 				callback : function(){
 					if (pergunta6Balao2.alpha == 1) {
-						window.open("https://www.youtube.com/embed/b61ZX2IgOww");
+						window.open("https://www.youtube.com/channel/UCOEJYQWqNNWLbVlxFCkT4Sw");
 					}
 				}
 			}
@@ -1284,7 +1297,7 @@ function showModalCpap(){
 	textoBeneficios.y = 150;
 
 	textoInformacoes = reg.modal.getModalItem("modalCpap", 16);
-	textoInformacoes.x = 735;
+	textoInformacoes.x = 725;
 	textoInformacoes.y = 420;
 
 	aparelhoCpap.alpha = 0.1;
